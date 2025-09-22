@@ -5,7 +5,7 @@ from pathlib import Path
 from fastapi.responses import HTMLResponse
 
 app = FastAPI(
-    title="Cats API",
+    title="Professors API",
     description="A simple FastAPI app using JSON as a database, demonstrating GET, POST, PUT, DELETE and HTML response.",
     version="1.0.0"
 )
