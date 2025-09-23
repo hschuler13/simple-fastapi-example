@@ -1,102 +1,53 @@
 {
-  "cats": [
-    {
-      "code": 200,
-      "name": "OK",
-      "message": "Everything is fine, here’s a happy cat!",
-      "image_url": "https://httpcats.com/200.jpg"
-    },
-    {
-      "code": 201,
-      "name": "Created",
-      "message": "A new resource was created successfully.",
-      "image_url": "https://httpcats.com/201.jpg"
-    },
-    {
-      "code": 202,
-      "name": "Accepted",
-      "message": "Your request is being processed.",
-      "image_url": "https://httpcats.com/202.jpg"
-    },
-    {
-      "code": 204,
-      "name": "No Content",
-      "message": "Request succeeded but no content returned.",
-      "image_url": "https://httpcats.com/204.jpg"
-    },
-    {
-      "code": 400,
-      "name": "Bad Request",
-      "message": "You sent something we cannot process.",
-      "image_url": "https://httpcats.com/400.jpg"
-    },
-    {
-      "code": 401,
-      "name": "Unauthorized",
-      "message": "You must be authenticated to access this resource.",
-      "image_url": "https://httpcats.com/401.jpg"
-    },
-    {
-      "code": 404,
-      "name": "Not Found",
-      "message": "Sorry, we could not find the resource.",
-      "image_url": "https://httpcats.com/404.jpg"
-    },
-    {
-      "code": 500,
-      "name": "Internal Server Error",
-      "message": "Something went very wrong on the server.",
-      "image_url": "https://httpcats.com/500.jpg"
-    }
-  ],
+  
   "professors": [
     {
       "code": 200,
       "name": "Fronchetti",
-      "message": "Sorry we (Steven & I) knocked on your door at 7pm :P",
-      "image_url": "https://httpcats.com/200.jpg"
+      "message": "Highest rated professor in LSU... still no girlfriend",
+      "image_url": "https://marvel-b1-cdn.bc0a.com/f00000000290274/www.lsu.edu/eng/cse/_media/photos/photoshoot2025/fronchetti.dias.luiz.felipe.web.jpg"
     },
     {
       "code": 201,
       "name": "Donze",
       "message": "LSU's most hydrated instructor",
-      "image_url": "https://httpcats.com/201.jpg"
+      "image_url": "https://marvel-b1-cdn.bc0a.com/f00000000290274/www.lsu.edu/eng/cse/_media/photos/photoshoot2025/donze.daniel.web.jpg"
     },
     {
       "code": 202,
       "name": "Bansal",
-      "message": "Always has on a good fit",
-      "image_url": "https://httpcats.com/202.jpg"
+      "message": "Thank you for the open note exams 🙏",
+      "image_url": "https://marvel-b1-cdn.bc0a.com/f00000000290274/www.lsu.edu/eng/cse/_media/photos/photoshoot2025/bansal.aakash.web.jpg"
     },
     {
       "code": 204,
       "name": "Nash",
-      "message": "Download Professor Index",
-      "image_url": "https://httpcats.com/204.jpg"
+      "message": "Called my dad a dinosaur (accurate description)",
+      "image_url": "https://marvel-b1-cdn.bc0a.com/f00000000290274/www.lsu.edu/eng/cse/_media/photos/photoshoot2025/mahmoud.nash.web.jpg"
     },
     {
       "code": 400,
-      "name": "Bad Request",
-      "message": "You sent something we cannot process.",
-      "image_url": "https://httpcats.com/400.jpg"
+      "name": "Eldewahi",
+      "message": "No... the QR code... come back~",
+      "image_url": "https://marvel-b1-cdn.bc0a.com/f00000000290274/www.lsu.edu/eng/cse/_media/photos/photoshoot2025/eldewahi.abeer.web.jpg"
     },
     {
       "code": 401,
-      "name": "Unauthorized",
-      "message": "You must be authenticated to access this resource.",
-      "image_url": "https://httpcats.com/401.jpg"
+      "name": "Phani",
+      "message": "STEVEN WHAT DID YOU DO TO THE DATABASE STEVEN",
+      "image_url": "https://marvel-b1-cdn.bc0a.com/f00000000290274/www.lsu.edu/eng/cse/_media/photos/photoshoot2025/vadrevu.phani.web.jpg"
     },
     {
       "code": 404,
-      "name": "Not Found",
-      "message": "Sorry, we could not find the resource.",
-      "image_url": "https://httpcats.com/404.jpg"
+      "name": "Webb",
+      "message": "Thanks for letting me bring a hair dryer into the final :)",
+      "image_url": "https://marvel-b1-cdn.bc0a.com/f00000000290274/www.lsu.edu/eng/cse/_media/photos/photoshoot2025/eldewahi.abeer.web.jpg"
     },
     {
       "code": 500,
-      "name": "Internal Server Error",
-      "message": "Something went very wrong on the server.",
-      "image_url": "https://httpcats.com/500.jpg"
+      "name": "Brandt",
+      "message": "I don't remember his class lowkey",
+      "image_url": "https://marvel-b1-cdn.bc0a.com/f00000000290274/www.lsu.edu/eng/cse/_media/photos/photoshoot2025/brandt.steven.web.jpg"
     }
   ]
 }

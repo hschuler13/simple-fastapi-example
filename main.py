@@ -27,76 +27,76 @@ def write_data(data):
     with open(DATA_FILE, "w") as f:
         json.dump(data, f, indent=4)
 
-class Cat(BaseModel):
+class Prof(BaseModel):
     code: int
     name: str
     message: str
     image_url: str = None
 
-@app.get("/cats", response_model=list[Cat])
-def list_cats():
-    """Return all cats from data.json."""
+@app.get("/prof", response_model=list[Prof])
+def list_profs():
+    """Return all professors from data.json."""
     data = read_data()
-    return data["cats"]
+    return data["professors"]
 
-@app.get("/cats/{code}", response_model=Cat)
-def get_cat(code: int):
-    """Return a single cat by its code."""
+@app.get("/profs/{code}", response_model=Prot)
+def get_profs(code: int):
+    """Return a single professor by its code."""
     data = read_data()
-    for cat in data["cats"]:
-        if cat["code"] == code:
-            return cat
-    raise HTTPException(status_code=404, detail="Cat not found")
+    for prof in data["professors"]:
+        if prof["code"] == code:
+            return prof
+    raise HTTPException(status_code=404, detail="Professor not found")
 
-@app.post("/cats", response_model=Cat)
-def add_cat(cat: Cat):
-    """Add a new cat to the JSON file."""
+@app.post("/profs", response_model=Prof)
+def add_prof(prof: Prof):
+    """Add a new professor to the JSON file."""
     data = read_data()
-    if any(c["code"] == cat.code for c in data["cats"]):
-        raise HTTPException(status_code=400, detail="Cat code already exists")
-    data["cats"].append(cat.dict())
+    if any(c["code"] == prof.code for c in data["profs"]):
+        raise HTTPException(status_code=400, detail="Professor code already exists")
+    data["profs"].append(prof.dict())
     write_data(data)
-    return cat
+    return prof
 
-@app.put("/cats/{code}", response_model=Cat)
-def update_cat(code: int, cat: Cat):
-    """Update an existing cat identified by its code."""
+@app.put("/profs/{code}", response_model=Prof)
+def update_prof(code: int, prof: Prof):
+    """Update an existing professor identified by its code."""
     data = read_data()
-    for idx, c in enumerate(data["cats"]):
+    for idx, c in enumerate(data["professors"]):
         if c["code"] == code:
-            data["cats"][idx] = cat.dict()
+            data["professors"][idx] = prof.dict()
             write_data(data)
-            return cat
-    raise HTTPException(status_code=404, detail="Cat not found")
+            return prof
+    raise HTTPException(status_code=404, detail="Professor not found")
 
-@app.delete("/cats/{code}")
-def delete_cat(code: int):
-    """Delete a cat by its code."""
+@app.delete("/profs/{code}")
+def delete_prof(code: int):
+    """Delete a professor by its code."""
     data = read_data()
-    for idx, c in enumerate(data["cats"]):
+    for idx, c in enumerate(data["professors"]):
         if c["code"] == code:
-            deleted = data["cats"].pop(idx)
+            deleted = data["professors"].pop(idx)
             write_data(data)
             return {"deleted": deleted}
-    raise HTTPException(status_code=404, detail="Cat not found")
+    raise HTTPException(status_code=404, detail="Professor not found")
 
-@app.get("/cats/{code}/image", response_class=HTMLResponse)
-def show_cat_image(code: int):
+@app.get("/profs/{code}/image", response_class=HTMLResponse)
+def show_prof_image(code: int):
     """
-    Show an HTML page with the cat image embedded.
+    Show an HTML page with the professor's image embedded.
     This demonstrates returning HTML instead of JSON.
     """
     data = read_data()
-    for cat in data["cats"]:
-        if cat["code"] == code and cat.get("image_url"):
+    for prof in data["professors"]:
+        if prof["code"] == code and prof.get("image_url"):
             return f"""
             <html>
-              <head><title>{cat['name']}</title></head>
+              <head><title>{prof['name']}</title></head>
               <body style='text-align:center; font-family:sans-serif;'>
-                <h1>{cat['name']} ({cat['code']})</h1>
-                <p>{cat['message']}</p>
-                <img src="{cat['image_url']}" alt="cat image" style="max-width:80%; height:auto;" />
+                <h1>{prof['name']} ({prof['code']})</h1>
+                <p>{prof['message']}</p>
+                <img src="{prof['image_url']}" alt="prof image" style="max-width:80%; height:auto;" />
               </body>
             </html>
             """
-    raise HTTPException(status_code=404, detail="Cat not found or no image URL")
+    raise HTTPException(status_code=404, detail="Professor not found or no image URL")
