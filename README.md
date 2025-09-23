@@ -101,7 +101,7 @@ curl -X 'POST' \
 ```http
 PUT /profs/{code}
 ```
-```
+
 sample cURL request:
 ```http
 curl -X 'PUT' \
