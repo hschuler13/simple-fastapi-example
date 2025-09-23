@@ -146,9 +146,9 @@ Displays a styled HTML card with the professor’s image, name, code, and messag
 ---
 
 ## Members
-Helena Schuler 
+Helena Schuler
 Steven Tan
-Amber Gill
+Amber Gill 
 Kashvi Teli
 Robert Breaux
 
