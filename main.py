@@ -33,7 +33,7 @@ class Prof(BaseModel):
     message: str
     image_url: str = None
 
-@app.get("/prof", response_model=list[Prof])
+@app.get("/profs", response_model=list[Prof])
 def list_profs():
     """Return all professors from data.json."""
     data = read_data()

@@ -52,7 +52,7 @@ pip install "fastapi[standard]"
 
 ### Get all professors
 ```http
-GET /prof
+GET /profs
 ```
 sample cURL request:
 ```http
