@@ -1,55 +1,52 @@
 {
-  
-  "professors": [
-    {
-      "code": 200,
-      "name": "Fronchetti",
-      "message": "Highest rated professor in LSU... still no girlfriend",
-      "image_url": "https://marvel-b1-cdn.bc0a.com/f00000000290274/www.lsu.edu/eng/cse/_media/photos/photoshoot2025/fronchetti.dias.luiz.felipe.web.jpg"
-    },
-    {
-      "code": 201,
-      "name": "Donze",
-      "message": "LSU's most hydrated instructor",
-      "image_url": "https://marvel-b1-cdn.bc0a.com/f00000000290274/www.lsu.edu/eng/cse/_media/photos/photoshoot2025/donze.daniel.web.jpg"
-    },
-    {
-      "code": 202,
-      "name": "Bansal",
-      "message": "Thank you for the open note exams 🙏",
-      "image_url": "https://marvel-b1-cdn.bc0a.com/f00000000290274/www.lsu.edu/eng/cse/_media/photos/photoshoot2025/bansal.aakash.web.jpg"
-    },
-    {
-      "code": 204,
-      "name": "Nash",
-      "message": "Called my dad a dinosaur (accurate description)",
-      "image_url": "https://marvel-b1-cdn.bc0a.com/f00000000290274/www.lsu.edu/eng/cse/_media/photos/photoshoot2025/mahmoud.nash.web.jpg"
-    },
-    {
-      "code": 400,
-      "name": "Eldewahi",
-      "message": "No... the QR code... come back~",
-      "image_url": "https://marvel-b1-cdn.bc0a.com/f00000000290274/www.lsu.edu/eng/cse/_media/photos/photoshoot2025/eldewahi.abeer.web.jpg"
-    },
-    {
-      "code": 401,
-      "name": "Phani",
-      "message": "STEVEN WHAT DID YOU DO TO THE DATABASE STEVEN",
-      "image_url": "https://marvel-b1-cdn.bc0a.com/f00000000290274/www.lsu.edu/eng/cse/_media/photos/photoshoot2025/vadrevu.phani.web.jpg"
-    },
-    {
-      "code": 404,
-      "name": "Webb",
-      "message": "Thanks for letting me bring a hair dryer into the final :)",
-      "image_url": "https://marvel-b1-cdn.bc0a.com/f00000000290274/www.lsu.edu/eng/cse/_media/photos/photoshoot2025/eldewahi.abeer.web.jpg"
-    },
-    {
-      "code": 500,
-      "name": "Brandt",
-      "message": "I don't remember his class lowkey",
-      "image_url": "https://marvel-b1-cdn.bc0a.com/f00000000290274/www.lsu.edu/eng/cse/_media/photos/photoshoot2025/brandt.steven.web.jpg"
-    }
-  ]
+    "professors": [
+        {
+            "code": 200,
+            "name": "Professor Fronchetti",
+            "message": "Highest rated professor in LSU... still no girlfriend",
+            "image_url": "https://marvel-b1-cdn.bc0a.com/f00000000290274/www.lsu.edu/eng/cse/_media/photos/photoshoot2025/fronchetti.dias.luiz.felipe.web.jpg"
+        },
+        {
+            "code": 201,
+            "name": "Instructor Donze",
+            "message": "LSU's most hydrated instructor",
+            "image_url": "https://marvel-b1-cdn.bc0a.com/f00000000290274/www.lsu.edu/eng/cse/_media/photos/photoshoot2025/donze.daniel.web.jpg"
+        },
+        {
+            "code": 202,
+            "name": "Professor Bansal",
+            "message": "Thank you for the open note exams \ud83d\ude4f",
+            "image_url": "https://marvel-b1-cdn.bc0a.com/f00000000290274/www.lsu.edu/eng/cse/_media/photos/photoshoot2025/bansal.aakash.web.jpg"
+        },
+        {
+            "code": 204,
+            "name": "Professor Nash",
+            "message": "Called my dad a dinosaur (accurate description)",
+            "image_url": "https://marvel-b1-cdn.bc0a.com/f00000000290274/www.lsu.edu/eng/cse/_media/photos/photoshoot2025/mahmoud.nash.web.jpg"
+        },
+        {
+            "code": 400,
+            "name": "Instructor Eldewahi",
+            "message": "No... the QR code... come back~",
+            "image_url": "https://marvel-b1-cdn.bc0a.com/f00000000290274/www.lsu.edu/eng/cse/_media/photos/photoshoot2025/eldewahi.abeer.web.jpg"
+        },
+        {
+            "code": 401,
+            "name": "Professor Phani",
+            "message": "STEVEN WHAT DID YOU DO TO THE DATABASE STEVEN",
+            "image_url": "https://marvel-b1-cdn.bc0a.com/f00000000290274/www.lsu.edu/eng/cse/_media/photos/photoshoot2025/vadrevu.phani.web.jpg"
+        },
+        {
+            "code": 404,
+            "name": "Professor Webb",
+            "message": "Thanks for letting me bring a hair dryer into the final :)",
+            "image_url": "https://marvel-b1-cdn.bc0a.com/f00000000290274/www.lsu.edu/eng/cse/_media/photos/photoshoot2025/eldewahi.abeer.web.jpg"
+        },
+        {
+            "code": 500,
+            "name": "Professor Brandt",
+            "message": "I don't remember his class lowkey",
+            "image_url": "https://marvel-b1-cdn.bc0a.com/f00000000290274/www.lsu.edu/eng/cse/_media/photos/photoshoot2025/brandt.steven.web.jpg"
+        }
+    ]
 }
-
-  

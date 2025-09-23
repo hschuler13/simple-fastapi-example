@@ -39,7 +39,7 @@ def list_profs():
     data = read_data()
     return data["professors"]
 
-@app.get("/profs/{code}", response_model=Prot)
+@app.get("/profs/{code}", response_model=Prof)
 def get_profs(code: int):
     """Return a single professor by its code."""
     data = read_data()
@@ -60,7 +60,7 @@ def add_prof(prof: Prof):
 
 @app.put("/profs/{code}", response_model=Prof)
 def update_prof(code: int, prof: Prof):
-    """Update an existing professor identified by its code."""
+    """Update an existing professor via its code."""
     data = read_data()
     for idx, c in enumerate(data["professors"]):
         if c["code"] == code:
@@ -71,7 +71,7 @@ def update_prof(code: int, prof: Prof):
 
 @app.delete("/profs/{code}")
 def delete_prof(code: int):
-    """Delete a professor by its code."""
+    """Delete a professor via its code."""
     data = read_data()
     for idx, c in enumerate(data["professors"]):
         if c["code"] == code:
@@ -93,9 +93,15 @@ def show_prof_image(code: int):
             <html>
               <head><title>{prof['name']}</title></head>
               <body style='text-align:center; font-family:sans-serif;'>
-                <h1>{prof['name']} ({prof['code']})</h1>
-                <p>{prof['message']}</p>
-                <img src="{prof['image_url']}" alt="prof image" style="max-width:80%; height:auto;" />
+              <div style='display: flex; justify-content: center; align-items: center; max-height: 70%; max-width: 70%; padding: 10px; margin-left: auto; margin-right: auto;  background-color: purple; border-radius: 20px; border-style: solid; border-width: 5px;'>
+                <div style='margin-top: 20px; margin-bottom: 20px; justify-content: center; max-width: 50%;'>
+                    <img src="{prof['image_url']}" alt="prof image" style="max-width:50%; max-height:70%; height:70%; border-radius: 10px;" />
+                </div>
+                <div style='margin-top: 20px; margin-bottom: 20px; justify-content: center; max-width: 50%;'>
+                    <h1>{prof['name']} ({prof['code']})</h1>
+                    <p>{prof['message']}</p>
+                </div>
+              </div>
               </body>
             </html>
             """
