@@ -3,7 +3,7 @@
         {
             "code": 200,
             "name": "Professor Fronchetti",
-            "message": "Highest rated professor in LSU... still no girlfriend",
+            "message": "Highest rated professor in LSU !!",
             "image_url": "https://marvel-b1-cdn.bc0a.com/f00000000290274/www.lsu.edu/eng/cse/_media/photos/photoshoot2025/fronchetti.dias.luiz.felipe.web.jpg"
         },
         {
@@ -21,7 +21,7 @@
         {
             "code": 204,
             "name": "Professor Nash",
-            "message": "Called my dad a dinosaur (accurate description)",
+            "message": "Download Professor Index",
             "image_url": "https://marvel-b1-cdn.bc0a.com/f00000000290274/www.lsu.edu/eng/cse/_media/photos/photoshoot2025/mahmoud.nash.web.jpg"
         },
         {
@@ -45,7 +45,7 @@
         {
             "code": 500,
             "name": "Professor Brandt",
-            "message": "I don't remember his class lowkey",
+            "message": "Liked my awful Pacman game",
             "image_url": "https://marvel-b1-cdn.bc0a.com/f00000000290274/www.lsu.edu/eng/cse/_media/photos/photoshoot2025/brandt.steven.web.jpg"
         }
     ]

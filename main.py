@@ -92,12 +92,12 @@ def show_prof_image(code: int):
             return f"""
             <html>
               <head><title>{prof['name']}</title></head>
-              <body style='text-align:center; font-family:sans-serif;'>
-              <div style='display: flex; justify-content: center; align-items: center; max-height: 70%; max-width: 70%; padding: 10px; margin-left: auto; margin-right: auto;  background-color: purple; border-radius: 20px; border-style: solid; border-width: 5px;'>
+              <body style='text-align:center; font-family:sans-serif; background-color: #c9ebee;'>
+              <div style='display: flex; justify-content: center; align-items: center; max-height: 70%; max-width: 70%; padding: 10px; margin-left: auto; margin-right: auto;  background-image: linear-gradient(to top, #ff7ba0, #ffc2d3); border-radius: 20px; border-style: solid; border-width: 5px; border-color: #c32854;'>
                 <div style='margin-top: 20px; margin-bottom: 20px; justify-content: center; max-width: 50%;'>
                     <img src="{prof['image_url']}" alt="prof image" style="max-width:50%; max-height:70%; height:70%; border-radius: 10px;" />
                 </div>
-                <div style='margin-top: 20px; margin-bottom: 20px; justify-content: center; max-width: 50%;'>
+                <div style='margin-top: 20px; margin-bottom: 20px; justify-content: center; max-width: 50%; color: #c32854;'>
                     <h1>{prof['name']} ({prof['code']})</h1>
                     <p>{prof['message']}</p>
                 </div>
