@@ -1,12 +1,6 @@
 {
     "professors": [
         {
-            "code": 200,
-            "name": "Professor Fronchetti",
-            "message": "Highest rated professor in LSU !!",
-            "image_url": "https://marvel-b1-cdn.bc0a.com/f00000000290274/www.lsu.edu/eng/cse/_media/photos/photoshoot2025/fronchetti.dias.luiz.felipe.web.jpg"
-        },
-        {
             "code": 201,
             "name": "Instructor Donze",
             "message": "LSU's most hydrated instructor",

@@ -21,19 +21,14 @@ This project demonstrates CRUD operations (GET, POST, PUT, DELETE) and returning
 - [Uvicorn](https://www.uvicorn.org/) (ASGI server)
 - Pydantic
 
+Open a virtual environment:
+- Choose .venv for the environment
+- Select one of the python 3.12.1 options
+- Check the requirements.txt box (this installs necessary packages: uvicorn, pydantic)
+
 Install dependencies with:
 ```bash
-pip install fastapi uvicorn pydantic
-```
-
----
-
-## Project Structure
-```
-.
-├── main.py        # FastAPI application
-├── data.json      # JSON "database"
-└── README.md      # Project documentation
+pip install "fastapi[standard]"
 ```
 
 ---
@@ -55,7 +50,8 @@ pip install fastapi uvicorn pydantic
    }
    ```
 3. Start the app:
-   ```fastapi dev main.py
+   ```bash
+   fastapi dev main.py
    ```
 4. Open your browser at:
    - API docs: [http://127.0.0.1:8000/docs](http://127.0.0.1:8000/docs)
@@ -71,6 +67,12 @@ pip install fastapi uvicorn pydantic
 ```http
 GET /prof
 ```
+sample cURL request:
+```http
+curl -X 'GET' \
+  'https://fluffy-engine-69w4gxgjpg9hr9gj-8000.app.github.dev/prof' \
+  -H 'accept: application/json'
+```
 Returns all professors from the JSON file.
 
 ---
@@ -79,6 +81,12 @@ Returns all professors from the JSON file.
 ```http
 GET /profs/{code}
 ```
+sample cURL request:
+```http
+curl -X 'GET' \
+  'https://fluffy-engine-69w4gxgjpg9hr9gj-8000.app.github.dev/profs/200' \
+  -H 'accept: application/json'
+```
 
 ---
 
@@ -86,14 +94,18 @@ GET /profs/{code}
 ```http
 POST /profs
 ```
-Request body:
-```json
-{
+sample cURL request:
+```http
+curl -X 'POST' \
+  'https://fluffy-engine-69w4gxgjpg9hr9gj-8000.app.github.dev/profs' \
+  -H 'accept: application/json' \
+  -H 'Content-Type: application/json' \
+  -d '{
   "code": 200,
-  "name": "Dr. Fronchetti",
-  "message": "I'm teaching CSC 3501",
-  "image_url": "https://example.com/fronchetti.jpg"
-}
+  "name": "Professor Fronchetti",
+  "message": "Highest rated professor in LSU !!",
+  "image_url": "https://marvel-b1-cdn.bc0a.com/f00000000290274/www.lsu.edu/eng/cse/_media/photos/photoshoot2025/fronchetti.dias.luiz.felipe.web.jpg"
+}'
 ```
 
 ---
@@ -102,14 +114,19 @@ Request body:
 ```http
 PUT /profs/{code}
 ```
-Request body:
-```json
-{
-  "code": 2,
-  "name": "Dr. Fronchetti",
-  "message": "Now I'm teaching CSC 4330",
-  "image_url": "https://example.com/fronchetti.jpg"
-}
+```
+sample cURL request:
+```http
+curl -X 'PUT' \
+  'https://fluffy-engine-69w4gxgjpg9hr9gj-8000.app.github.dev/profs/200' \
+  -H 'accept: application/json' \
+  -H 'Content-Type: application/json' \
+  -d '{
+  "code": 200,
+  "name": "Professor Fronchetti",
+  "message": "Highest rated professor in LSU !! He has awesome PhD students :)",
+  "image_url": "https://marvel-b1-cdn.bc0a.com/f00000000290274/www.lsu.edu/eng/cse/_media/photos/photoshoot2025/fronchetti.dias.luiz.felipe.web.jpg"
+}'
 ```
 
 ---
@@ -118,6 +135,12 @@ Request body:
 ```http
 DELETE /profs/{code}
 ```
+sample cURL request:
+```http
+curl -X 'DELETE' \
+  'https://fluffy-engine-69w4gxgjpg9hr9gj-8000.app.github.dev/profs/200' \
+  -H 'accept: application/json'
+```
 
 ---
 
@@ -125,7 +148,20 @@ DELETE /profs/{code}
 ```http
 GET /profs/{code}/image
 ```
+sample cURL request:
+```http
+curl -X 'GET' \
+  'https://fluffy-engine-69w4gxgjpg9hr9gj-8000.app.github.dev/profs/200/image' \
+  -H 'accept: text/html'
+```
 Displays a styled HTML card with the professor’s image, name, code, and message.
 
 ---
+
+## Members
+Helena Schuler 
+Steven Tan
+Amber Gill
+Kashvi Teli
+Robert Breaux
 
