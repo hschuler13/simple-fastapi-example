@@ -35,29 +35,16 @@ pip install "fastapi[standard]"
 
 ## Running the API
 1. Clone or download this repository.
-2. Create a `data.json` file in the same folder as `main.py`. Example:
 
-   ```json
-   {
-       "professors": [
-           {
-               "code": 200,
-               "name": "Dr. Fronchetti",
-               "message": "Go Corinthians! (I hope that's the right team)",
-               "image_url": "https://example.com/fronchetti.jpg"
-           }
-       ]
-   }
-   ```
-3. Start the app:
+2. Start the app:
    ```bash
    fastapi dev main.py
    ```
-4. Open your browser at:
+3. Open your browser at:
    - API docs: [http://127.0.0.1:8000/docs](http://127.0.0.1:8000/docs)
    - Alternative docs: [http://127.0.0.1:8000/redoc](http://127.0.0.1:8000/redoc)
 
-5. To open the interactive web documentation, append '/docs' to the fowarded port
+4. To open the interactive web documentation, append '/docs' to the fowarded port
 
 ---
 
